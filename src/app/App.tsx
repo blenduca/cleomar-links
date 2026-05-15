@@ -322,27 +322,6 @@ function LinkedInIcon() {
   );
 }
 
-// ─── YouTube Icon ─────────────────────────────────────────────────────────────
-function YouTubeIcon() {
-  return (
-    <svg width="18" height="18" fill="none" viewBox="0 0 18 18">
-      <path
-        d={svgPaths.p1e200900}
-        stroke="#EB6931"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="1.5"
-      />
-      <path
-        d={svgPaths.p35138200}
-        stroke="#EB6931"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="1.5"
-      />
-    </svg>
-  );
-}
 
 // ─── Facebook Icon ────────────────────────────────────────────────────────────
 function FacebookIcon() {
