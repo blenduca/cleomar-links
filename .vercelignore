@@ -1,0 +1,15 @@
+# Documentation
+README.md
+ATTRIBUTIONS.md
+guidelines/
+
+# Local configuration
+.gitignore
+.vercel/
+
+# Development tools
+node_modules/
+package-lock.json
+
+# Build output
+dist/

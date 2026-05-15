@@ -29,11 +29,10 @@ function ArrowButton({ dark = false }: { dark?: boolean }) {
     <motion.div
       whileHover={{ scale: 1.15 }}
       whileTap={{ scale: 0.95 }}
-      className={`flex items-center justify-center rounded-full size-10 shrink-0 cursor-pointer ${
-        dark
-          ? "bg-[rgba(255,255,255,0.1)] border border-[rgba(255,255,255,0.18)]"
-          : "bg-[rgba(16,38,64,0.1)] border border-[rgba(16,38,64,0.18)]"
-      }`}
+      className={`flex items-center justify-center rounded-full size-10 shrink-0 cursor-pointer ${dark
+        ? "bg-[rgba(255,255,255,0.1)] border border-[rgba(255,255,255,0.18)]"
+        : "bg-[rgba(16,38,64,0.1)] border border-[rgba(16,38,64,0.18)]"
+        }`}
     >
       <ArrowIcon color={dark ? "white" : "#102640"} />
     </motion.div>
@@ -50,11 +49,10 @@ function Badge({
 }) {
   return (
     <div
-      className={`w-fit inline-flex items-center px-4 py-1.5 rounded-full border text-[11px] sm:text-[13px] uppercase tracking-wider ${
-        dark
-          ? "bg-[rgba(255,255,255,0.1)] border-[rgba(255,255,255,0.18)] text-[#b3b3b3]"
-          : "bg-[rgba(16,38,64,0.1)] border-[rgba(16,38,64,0.18)] text-[#102640]"
-      }`}
+      className={`w-fit inline-flex items-center px-4 py-1.5 rounded-full border text-[11px] sm:text-[13px] uppercase tracking-wider ${dark
+        ? "bg-[rgba(255,255,255,0.1)] border-[rgba(255,255,255,0.18)] text-[#b3b3b3]"
+        : "bg-[rgba(16,38,64,0.1)] border-[rgba(16,38,64,0.18)] text-[#102640]"
+        }`}
       style={{ fontFamily: "'Mohave', sans-serif", fontWeight: 700, letterSpacing: "-0.65px" }}
     >
       {label}
@@ -448,7 +446,7 @@ export default function App() {
       <div className="flex flex-col items-center gap-6 w-full max-w-[700px] px-4 mt-8">
         {/* Banner 1 – Tenedini Representações (orange) */}
         <BannerCard
-          href="https://tenedinirepresentacoes.com.br"
+          href="https://wa.me/5549999773055"
           bg="#e86820"
           badge="Representações"
           titleLight="tenedini"
@@ -462,7 +460,7 @@ export default function App() {
 
         {/* Banner 2 – Terapia de Vendas (dark) */}
         <BannerCard
-          href="https://terapiadevendas.com.br"
+          href="https://v0-cleomar-tenedini.vercel.app/"
           bg="linear-gradient(142.244deg, rgb(15,38,69) 0%, rgb(10,28,51) 100%)"
           badge="Comunidade"
           badgeDark
@@ -478,7 +476,7 @@ export default function App() {
 
         {/* Banner 3 – Academia de Vendas (orange) */}
         <BannerCard
-          href="https://academiadevendas.com.br"
+          href="https://wa.me/5549999773055?text=Ol%C3%A1%2C%20gostaria%20de%20participar%20da%20Academia%20de%20Vendas."
           bg="#e86820"
           badge="Consultoria · In-company"
           titleLight="Academia de"
@@ -492,7 +490,7 @@ export default function App() {
 
         {/* Banner 4 – Fale com o Cleomar (dark) */}
         <BannerCard
-          href="https://wa.me/5500000000000"
+          href="https://wa.me/5549999773055"
           bg="linear-gradient(148.782deg, rgb(15,38,69) 0%, rgb(10,28,51) 100%)"
           badge=""
           badgeDark
@@ -538,16 +536,16 @@ export default function App() {
           </span>
         </p>
         <div className="flex items-center gap-4">
-          <SocialButton href="https://instagram.com">
+          <SocialButton href="https://www.instagram.com/cleomar.tenedini/">
             <InstagramIcon />
           </SocialButton>
-          <SocialButton href="https://linkedin.com">
+          <SocialButton href="https://www.linkedin.com/in/cleomar-luiz-tenedini-656a09280">
             <LinkedInIcon />
           </SocialButton>
           <SocialButton href="https://youtube.com">
             <YouTubeIcon />
           </SocialButton>
-          <SocialButton href="https://facebook.com">
+          <SocialButton href="https://www.facebook.com/cleomarluiz.tenedini">
             <FacebookIcon />
           </SocialButton>
         </div>
