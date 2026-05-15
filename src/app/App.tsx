@@ -521,9 +521,6 @@ export default function App() {
           <SocialButton href="https://www.linkedin.com/in/cleomar-luiz-tenedini-656a09280">
             <LinkedInIcon />
           </SocialButton>
-          <SocialButton href="https://youtube.com">
-            <YouTubeIcon />
-          </SocialButton>
           <SocialButton href="https://www.facebook.com/cleomarluiz.tenedini">
             <FacebookIcon />
           </SocialButton>
