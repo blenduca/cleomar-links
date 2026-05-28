@@ -402,7 +402,7 @@ export default function App() {
             +15 anos em vendas consultivas.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-2 mt-3">
-            {["CONSULTORIA B2B", "+ 15 ANOS", "ALTA PERFORMANCE"].map((tag) => (
+            {["CONSULTORIA B2B", "VENDA CONSULTIVA", "ALTA PERFORMANCE"].map((tag) => (
               <span
                 key={tag}
                 className="inline-flex items-center px-4 py-1.5 rounded-full bg-[rgba(235,105,49,0.2)] border border-[rgba(235,105,49,0.3)]"
@@ -423,21 +423,7 @@ export default function App() {
 
       {/* ── Banner Cards ───────────────────────────────────────────────────── */}
       <div className="flex flex-col items-center gap-6 w-full max-w-[700px] px-4 mt-8">
-        {/* Banner 1 – Tenedini Representações (orange) */}
-        <BannerCard
-          href="https://wa.me/5549999773055"
-          bg="#e86820"
-          badge="Representações"
-          titleLight="tenedini"
-          titleBold="representações"
-          titleLightColor="#102640"
-          titleBoldColor="#102640"
-          description="Serviços de Representação de Vendas Complexas."
-          descriptionColor="#102640"
-          decorationColor="#102640"
-        />
-
-        {/* Banner 2 – Terapia de Vendas (dark) */}
+        {/* Banner 1 – Terapia de Vendas (dark) */}
         <BannerCard
           href="https://v0-cleomar-tenedini.vercel.app/"
           bg="linear-gradient(142.244deg, rgb(15,38,69) 0%, rgb(10,28,51) 100%)"
@@ -451,6 +437,23 @@ export default function App() {
           descriptionColor="#b3b3b3"
           decorationColor="#e86820"
           dark
+        />
+
+        {/* Banner 2 – Fale com o Cleomar / WhatsApp (dark) */}
+        <BannerCard
+          href="https://wa.me/5549999773055"
+          bg="linear-gradient(148.782deg, rgb(15,38,69) 0%, rgb(10,28,51) 100%)"
+          badge=""
+          badgeDark
+          titleLight="Fale com o"
+          titleBold="cleomar"
+          titleLightColor="#b3b3b3"
+          titleBoldColor="white"
+          description="Diagnóstico comercial gratuito!"
+          descriptionColor="#b3b3b3"
+          decorationColor="#e86820"
+          dark
+          cta={<WhatsAppButton />}
         />
 
         {/* Banner 3 – Academia de Vendas (orange) */}
@@ -467,21 +470,18 @@ export default function App() {
           decorationColor="#102640"
         />
 
-        {/* Banner 4 – Fale com o Cleomar (dark) */}
+        {/* Banner 4 – Tenedini Representações (orange) */}
         <BannerCard
           href="https://wa.me/5549999773055"
-          bg="linear-gradient(148.782deg, rgb(15,38,69) 0%, rgb(10,28,51) 100%)"
-          badge=""
-          badgeDark
-          titleLight="Fale com o"
-          titleBold="cleomar"
-          titleLightColor="#b3b3b3"
-          titleBoldColor="white"
-          description="Diagnóstico comercial gratuito!"
-          descriptionColor="#b3b3b3"
-          decorationColor="#e86820"
-          dark
-          cta={<WhatsAppButton />}
+          bg="#e86820"
+          badge="Representações"
+          titleLight="tenedini"
+          titleBold="representações"
+          titleLightColor="#102640"
+          titleBoldColor="#102640"
+          description="Serviços de Representação de Vendas Complexas."
+          descriptionColor="#102640"
+          decorationColor="#102640"
         />
       </div>
 
