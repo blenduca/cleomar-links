@@ -399,10 +399,9 @@ export default function App() {
             }}
           >
             Consultoria e treinamento para empresas que querem escalar vendas.
-            +15 anos em vendas consultivas.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-2 mt-3">
-            {["CONSULTORIA B2B", "VENDA CONSULTIVA", "ALTA PERFORMANCE"].map((tag) => (
+            {["CONSULTORIA B2B", "15+ ANOS EM VENDAS CONSULTIVAS", "ALTA PERFORMANCE"].map((tag) => (
               <span
                 key={tag}
                 className="inline-flex items-center px-4 py-1.5 rounded-full bg-[rgba(235,105,49,0.2)] border border-[rgba(235,105,49,0.3)]"
